@@ -1,132 +1,80 @@
 <html>
-	<head>
-		<title>Mouse Keyboard</title>
-		<link type="text/css" rel="stylesheet" href="style.css" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<script language="javascript" type="text/javascript">
 
-	function addtextA(){document.myform.outputtext.value += "a";}
-	function addtextB(){document.myform.outputtext.value += "b";}
-	function addtextC(){document.myform.outputtext.value += "c";}
-	function addtextD(){document.myform.outputtext.value += "d";}
-	function addtextE(){document.myform.outputtext.value += "e";}
-	function addtextF(){document.myform.outputtext.value += "f";}
-	function addtextG(){document.myform.outputtext.value += "g";}
-	function addtextH(){document.myform.outputtext.value += "h";}
-	function addtextI(){document.myform.outputtext.value += "i";}
-	function addtextJ(){document.myform.outputtext.value += "j";}
-	function addtextK(){document.myform.outputtext.value += "k";}
-	function addtextL(){document.myform.outputtext.value += "l";}
-	function addtextM(){document.myform.outputtext.value += "m";}
-	function addtextN(){document.myform.outputtext.value += "n";}
-	function addtextO(){document.myform.outputtext.value += "o";}
-	function addtextP(){document.myform.outputtext.value += "p";}
 	function addtextQ(){document.myform.outputtext.value += "q";}
-	function addtextR(){document.myform.outputtext.value += "r";}
-	function addtextS(){document.myform.outputtext.value += "s";}
-	function addtextT(){document.myform.outputtext.value += "t";}
-	function addtextU(){document.myform.outputtext.value += "u";}
-	function addtextV(){document.myform.outputtext.value += "v";}
-	function addtextW(){document.myform.outputtext.value += "w";}
-	function addtextX(){document.myform.outputtext.value += "x";}
-	function addtextY(){document.myform.outputtext.value += "y";}
-	function addtextZ(){document.myform.outputtext.value += "z";}
-	function addtext1(){document.myform.outputtext.value += "1";}
-	function addtext2(){document.myform.outputtext.value += "2";}
-	function addtext3(){document.myform.outputtext.value += "3";}
-	function addtext4(){document.myform.outputtext.value += "4";}
-	function addtext5(){document.myform.outputtext.value += "5";}
-	function addtext6(){document.myform.outputtext.value += "6";}
-	function addtext7(){document.myform.outputtext.value += "7";}
-	function addtext8(){document.myform.outputtext.value += "8";}
-	function addtext9(){document.myform.outputtext.value += "9";}
-	function addtext0(){document.myform.outputtext.value += "0";}
-	function addtextdot(){document.myform.outputtext.value += ".";}
-	function addtextwww(){document.myform.outputtext.value += "www.";}
-	function addtexthttp(){document.myform.outputtext.value += "http://";}
-	function addtextat(){document.myform.outputtext.value += "@";}
-	function addtextcom(){document.myform.outputtext.value += ".com";}
-	function addtextspace(){document.myform.outputtext.value += " ";}
-	function addtextselect(){document.myform.outputtext.select();}
-	function myFunction() {
-	  /* Get the text field */
-	  var copyText = document.getElementById("outputtext");
-	  /* Select the text field */
+<head>
+	<title>Mouse Keyboard</title>
+	<link type="text/css" rel="stylesheet" href="style.css" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="keyboard.js"></script>
 
-	  copyText.select();
-	  /* Copy the text inside the text field */
-	  document.execCommand("Copy");
-	  /* Alert the copied text */
-	  alert("Copied the text: " + copyText.value);
-	}
+</head>
 
-	</script>
-	</head>
-	<body>
-		<div class="main_content">
-			<div class="left-column"></div>
-			<div id="container">
+<body>
+	<div class="main_content">
+		<div class="left-column"></div>
+		<div id="container">
 
 			<form name="myform" autocomplete="on" width="100%" action="https://www.google.com/" method="get">
-			<table border="0" cellspacing="0" cellpadding="0" width="100%">
-				<tr>
-					<td align="center"><textarea placeholder="Enter Text" name="outputtext" id="outputtext" rows="4"></textarea></td>
-				</tr>
-				<tr>
-					<td align="center">
-						<input type="button" value="1" onclick="addtext1();">
-						<input type="button" value="2" onclick="addtext2();">
-						<input type="button" value="3" onclick="addtext3();">
-						<input type="button" value="4" onclick="addtext4();">
-						<input type="button" value="5" onclick="addtext5();">
-						<input type="button" value="6" onclick="addtext6();">
-						<input type="button" value="7" onclick="addtext7();">
-						<input type="button" value="8" onclick="addtext8();">
-						<input type="button" value="9" onclick="addtext9();">
-						<input type="button" value="0" onclick="addtext0();">
-						<br>
-						<input type="button" value="Q" onclick="addtextQ();">
-						<input type="button" value="W" onclick="addtextW();">
-						<input type="button" value="E" onclick="addtextE();">
-						<input type="button" value="R" onclick="addtextR();">
-						<input type="button" value="T" onclick="addtextT();">
-						<input type="button" value="Y" onclick="addtextY();">														<input type="button" value="U" onclick="addtextU();">
-						<input type="button" value="I" onclick="addtextI();">
-						<input type="button" value="O" onclick="addtextO();">
-						<input type="button" value="P" onclick="addtextP();">
-						<br>
-						<input type="button" value="A" onclick="addtextA();">
-						<input type="button" value="S" onclick="addtextS();">														<input type="button" value="D" onclick="addtextD();">
-						<input type="button" value="F" onclick="addtextF();">
-						<input type="button" value="G" onclick="addtextG();">
-						<input type="button" value="H" onclick="addtextH();">														<input type="button" value="J" onclick="addtextJ();">
-						<input type="button" value="K" onclick="addtextK();">
-						<input type="button" value="L" onclick="addtextL();">
-						<br>
-						<input type="button" value="Z" onclick="addtextZ();">
-						<input type="button" value="X" onclick="addtextX();">
-						<input type="button" value="C" onclick="addtextC();">														<input type="button" value="V" onclick="addtextV();">
-						<input type="button" value="B" onclick="addtextB();">
-						<input type="button" value="N" onclick="addtextN();">														<input type="button" value="M" onclick="addtextM();">
-						<br>
-						<input type="button" value="http://" onclick="addtexthttp();">
-						<input type="button" value="www." onclick="addtextwww();">
-						<input type="button" value="." onclick="addtextdot();">
-						<input type="button" value=".com" onclick="addtextcom();">
-						<input type="button" value="@" onclick="addtextat();">
-						<input type="button" value="Space" onclick="addtextspace();">
-						<br>
-						<input type="reset" value="Clear">
-						<input type="button" value="Select" onclick="addtextselect();">
+				<table border="0" cellspacing="0" cellpadding="0" width="100%">
+					<tr>
+						<td align="center"><textarea placeholder="Enter Text" name="outputtext" id="outputtext" rows="4"></textarea></td>
+					</tr>
+					<tr>
+						<td align="center">
+							<input type="button" value="1" onclick="addtext1();">
+							<input type="button" value="2" onclick="addtext2();">
+							<input type="button" value="3" onclick="addtext3();">
+							<input type="button" value="4" onclick="addtext4();">
+							<input type="button" value="5" onclick="addtext5();">
+							<input type="button" value="6" onclick="addtext6();">
+							<input type="button" value="7" onclick="addtext7();">
+							<input type="button" value="8" onclick="addtext8();">
+							<input type="button" value="9" onclick="addtext9();">
+							<input type="button" value="0" onclick="addtext0();">
+							<br>
+							<input type="button" value="Q" onclick="addtextQ();">
+							<input type="button" value="W" onclick="addtextW();">
+							<input type="button" value="E" onclick="addtextE();">
+							<input type="button" value="R" onclick="addtextR();">
+							<input type="button" value="T" onclick="addtextT();">
+							<input type="button" value="Y" onclick="addtextY();"> <input type="button" value="U" onclick="addtextU();">
+							<input type="button" value="I" onclick="addtextI();">
+							<input type="button" value="O" onclick="addtextO();">
+							<input type="button" value="P" onclick="addtextP();">
+							<br>
+							<input type="button" value="A" onclick="addtextA();">
+							<input type="button" value="S" onclick="addtextS();"> <input type="button" value="D" onclick="addtextD();">
+							<input type="button" value="F" onclick="addtextF();">
+							<input type="button" value="G" onclick="addtextG();">
+							<input type="button" value="H" onclick="addtextH();"> <input type="button" value="J" onclick="addtextJ();">
+							<input type="button" value="K" onclick="addtextK();">
+							<input type="button" value="L" onclick="addtextL();">
+							<br>
+							<input type="button" value="Z" onclick="addtextZ();">
+							<input type="button" value="X" onclick="addtextX();">
+							<input type="button" value="C" onclick="addtextC();"> <input type="button" value="V" onclick="addtextV();">
+							<input type="button" value="B" onclick="addtextB();">
+							<input type="button" value="N" onclick="addtextN();"> <input type="button" value="M" onclick="addtextM();">
+							<br>
+							<input type="button" value="http://" onclick="addtexthttp();">
+							<input type="button" value="www." onclick="addtextwww();">
+							<input type="button" value="." onclick="addtextdot();">
+							<input type="button" value=".com" onclick="addtextcom();">
+							<input type="button" value="@" onclick="addtextat();">
+							<input type="button" value="Space" onclick="addtextspace();">
+							<br>
+							<input type="reset" value="Clear">
+							<input type="button" value="Select" onclick="addtextselect();">
 
-						<!-- The button used to copy the text -->
-						<button onclick="myFunction()">Copy Text</button>
-					</td>
-				</tr>
-			</table>
+							<!-- The button used to copy the text -->
+							<button onclick="myFunction()">Copy Text</button>
+						</td>
+					</tr>
+				</table>
 			</form>
 		</div>
 		<div class="right-column"></div>
-		</div>
-	</body>
+	</div>
+</body>
+
 </html>
