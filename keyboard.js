@@ -111,6 +111,3 @@ function myFunction() {
   /* Alert the copied text */
   alert("Copied the text: " + copyText.value);
 }
-
-// let container = document.getElementsByClassName('numbers')
-// container[0].style.boxShadow = '1px 3px 2px rgba(0, 0, 0, 1.25)';
