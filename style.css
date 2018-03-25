@@ -7,6 +7,11 @@
     --btn_clr: #005580;
 }
 
+* {
+    margin: 0px;
+    padding: 4px;
+}
+
 .main_content {
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
@@ -51,7 +56,7 @@ textarea {
     border-radius: 4px;
     background: #e6ffe6;
     width: 100%;
-    font-size: 120%;
+    font-size: 125%;
 }
 
 .activeClick {
