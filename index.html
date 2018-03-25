@@ -14,54 +14,62 @@
 		<div id="container">
 
 			<form name="myform" autocomplete="on" width="100%" action="https://www.google.com/" method="get">
-				<table border="0" cellspacing="0" cellpadding="0" width="100%">
+				<table>
 					<tr>
 						<td align="center"><textarea placeholder="Enter Text" name="outputtext" id="outputtext" rows="4"></textarea></td>
 					</tr>
 					<tr>
 						<td align="center">
-							<input type="button" value="1" onclick="addtext1();">
-							<input type="button" value="2" onclick="addtext2();">
-							<input type="button" value="3" onclick="addtext3();">
-							<input type="button" value="4" onclick="addtext4();">
-							<input type="button" value="5" onclick="addtext5();">
-							<input type="button" value="6" onclick="addtext6();">
-							<input type="button" value="7" onclick="addtext7();">
-							<input type="button" value="8" onclick="addtext8();">
-							<input type="button" value="9" onclick="addtext9();">
-							<input type="button" value="0" onclick="addtext0();">
+							<input type="button" class="numbers" value="1" onclick="addtext(1);">
+							<input type="button" class="numbers" value="2" onclick="addtext(2);">
+							<input type="button" class="numbers" value="3" onclick="addtext(3);">
+							<input type="button" class="numbers" value="4" onclick="addtext(4);">
+							<input type="button" class="numbers" value="5" onclick="addtext(5);">
+							<input type="button" class="numbers" value="6" onclick="addtext(6);">
+							<input type="button" class="numbers" value="7" onclick="addtext(7);">
+							<input type="button" class="numbers" value="8" onclick="addtext(8);">
+							<input type="button" class="numbers" value="9" onclick="addtext(9);">
+							<input type="button" class="numbers" value="0" onclick="addtext(0);">
 							<br>
-							<input type="button" value="Q" onclick="addtextQ();">
-							<input type="button" value="W" onclick="addtextW();">
-							<input type="button" value="E" onclick="addtextE();">
-							<input type="button" value="R" onclick="addtextR();">
-							<input type="button" value="T" onclick="addtextT();">
-							<input type="button" value="Y" onclick="addtextY();"> <input type="button" value="U" onclick="addtextU();">
-							<input type="button" value="I" onclick="addtextI();">
-							<input type="button" value="O" onclick="addtextO();">
-							<input type="button" value="P" onclick="addtextP();">
+							<input type="button" class="letters" value="q" onclick="addtext('q');">
+							<input type="button" class="letters" value="w" onclick="addtext('w');">
+							<input type="button" class="letters" value="e" onclick="addtext('e');">
+							<input type="button" class="letters" value="r" onclick="addtext('r');">
+							<input type="button" class="letters" value="t" onclick="addtext('t');">
+							<input type="button" class="letters" value="y" onclick="addtext('y');">
+							<input type="button" class="letters" value="u" onclick="addtext('u');">
+							<input type="button" class="letters" value="i" onclick="addtext('i');">
+							<input type="button" class="letters" value="o" onclick="addtext('o');">
+							<input type="button" class="letters" value="p" onclick="addtext('p');">
 							<br>
-							<input type="button" value="A" onclick="addtextA();">
-							<input type="button" value="S" onclick="addtextS();"> <input type="button" value="D" onclick="addtextD();">
-							<input type="button" value="F" onclick="addtextF();">
-							<input type="button" value="G" onclick="addtextG();">
-							<input type="button" value="H" onclick="addtextH();"> <input type="button" value="J" onclick="addtextJ();">
-							<input type="button" value="K" onclick="addtextK();">
-							<input type="button" value="L" onclick="addtextL();">
+							<input type="button" class="letters" value="a" onclick="addtext('a');">
+							<input type="button" class="letters" value="s" onclick="addtext('s');">
+							<input type="button" class="letters" value="d" onclick="addtext('d');">
+							<input type="button" class="letters" value="f" onclick="addtext('f');">
+							<input type="button" class="letters" value="g" onclick="addtext('g');">
+							<input type="button" class="letters" value="h" onclick="addtext('h');">
+							<input type="button" class="letters" value="j" onclick="addtext('j');">
+							<input type="button" class="letters" value="k" onclick="addtext('k');">
+							<input type="button" class="letters" value="l" onclick="addtext('l');">
 							<br>
-							<input type="button" value="Z" onclick="addtextZ();">
-							<input type="button" value="X" onclick="addtextX();">
-							<input type="button" value="C" onclick="addtextC();"> <input type="button" value="V" onclick="addtextV();">
-							<input type="button" value="B" onclick="addtextB();">
-							<input type="button" value="N" onclick="addtextN();"> <input type="button" value="M" onclick="addtextM();">
+							<input type="button" class="letters" value="z" onclick="addtext('z');">
+							<input type="button" class="letters" value="x" onclick="addtext('x');">
+							<input type="button" class="letters" value="c" onclick="addtext('c');">
+							<input type="button" class="letters" value="v" onclick="addtext('v');">
+							<input type="button" class="letters" value="b" onclick="addtext('b');">
+							<input type="button" class="letters" value="n" onclick="addtext('n');">
+							<input type="button" class="letters" value="m" onclick="addtext('m');">
 							<br>
-							<input type="button" value="http://" onclick="addtexthttp();">
-							<input type="button" value="www." onclick="addtextwww();">
-							<input type="button" value="." onclick="addtextdot();">
-							<input type="button" value=".com" onclick="addtextcom();">
-							<input type="button" value="@" onclick="addtextat();">
-							<input type="button" value="Space" onclick="addtextspace();">
+							<input type="button" id="shift" class="off" value="Shift" onclick="toggleText()">
+							<input type="button" value="http://" onclick="addtext('http://');">
+							<input type="button" value="www." onclick="addtext('www.');">
+							<input type="button" class="numbers" value="." onclick="addtext('.');">
+							<input type="button" value=".com" onclick="addtext('.com');">
+							<input type="button" class="numbers" value=":" onclick="addtext(':');">
+							<input type="button" value="@" onclick="addtext('@');">
+							<input type="button" value="Space" onclick="addtext(' ');">
 							<br>
+							<input type="button" value="Delete" onclick="deltext()">
 							<input type="reset" value="Clear">
 							<input type="button" value="Select" onclick="addtextselect();">
 
