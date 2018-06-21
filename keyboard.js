@@ -50,6 +50,7 @@ function chgUpperNum(){
     num[9].value = ")";
     num[10].value = ",";
     num[11].value = ";";
+    num[12].value = "?";
 
     num.forEach(function(input, index){
         // console.log(index);
@@ -72,6 +73,7 @@ function chgLowerNum(){
     num[9].value = "0";
     num[10].value = ".";
     num[11].value = ":";
+    num[12].value = "/";
 
     num.forEach(function(input, index){
         // console.log(index);
